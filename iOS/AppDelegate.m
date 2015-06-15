@@ -11,10 +11,16 @@
 
 #import "RCTRootView.h"
 
+#import "RNRealm-Swift.h"
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+  [DataTest run];
+  
   NSURL *jsCodeLocation;
 
   /**
